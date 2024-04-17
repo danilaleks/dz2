@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Page</title>
+</head>
+<body>
+    <h1>Admin Page</h1>
+    <h2>Main Products</h2>
+    <ul>
+        {% for product in main_products %}
+            <li>{{ product.name }}</li>
+        {% endfor %}
+    </ul>
+    <h2>Top Products</h2>
+    <ul>
+        {% for product in top_products %}
+            <li>{{ product.name }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
